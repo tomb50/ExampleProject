@@ -59,6 +59,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
@@ -106,7 +107,7 @@
             <node concept="liA8E" id="5iAgY13znX8" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="Xl_RD" id="5iAgY13zpsk" role="37wK5m">
-                <property role="Xl_RC" value="here is some code" />
+                <property role="Xl_RC" value="here is some code, And i have added new stuff as part of my change" />
               </node>
             </node>
           </node>
@@ -148,6 +149,13 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="175hM6u4PpJ" role="3cqZAp">
+          <node concept="3cpWsn" id="175hM6u4PpM" role="3cpWs9">
+            <property role="TrG5h" value="additionalLogic" />
+            <node concept="10P_77" id="175hM6u4PpH" role="1tU5fm" />
+            <node concept="3clFbT" id="175hM6u4PHC" role="33vP2m" />
+          </node>
+        </node>
         <node concept="3clFbF" id="5iAgY13zrNw" role="3cqZAp">
           <node concept="2OqwBi" id="5iAgY13zrNt" role="3clFbG">
             <node concept="10M0yZ" id="5iAgY13zrNu" role="2Oq$k0">
@@ -157,7 +165,7 @@
             <node concept="liA8E" id="5iAgY13zrNv" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="Xl_RD" id="5iAgY13zrPV" role="37wK5m">
-                <property role="Xl_RC" value="This is existing code in the master branch" />
+                <property role="Xl_RC" value="Dev changing some existing stuff, the commit that made this change originated on change-some-existsing-stuff-branch" />
               </node>
             </node>
           </node>
@@ -171,9 +179,27 @@
             <node concept="liA8E" id="5iAgY13zsuI" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="Xl_RD" id="5iAgY13zsxW" role="37wK5m">
-                <property role="Xl_RC" value="We are going to change it on a feature branch to test out the VCS reloading." />
+                <property role="Xl_RC" value="This has also been change." />
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="175hM6u4POk" role="3cqZAp">
+          <node concept="3clFbS" id="175hM6u4POm" role="3clFbx">
+            <node concept="YS8fn" id="175hM6u4Q3Y" role="3cqZAp">
+              <node concept="2ShNRf" id="175hM6u4Q7c" role="YScLw">
+                <node concept="1pGfFk" id="175hM6u4Riu" role="2ShVmc">
+                  <ref role="37wK5l" to="wyt6:~IllegalStateException.&lt;init&gt;(java.lang.String)" resolve="IllegalStateException" />
+                  <node concept="Xl_RD" id="175hM6u4Roj" role="37wK5m">
+                    <property role="Xl_RC" value="no additional logic allowed today" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="175hM6u4POl" role="3cqZAp" />
+          </node>
+          <node concept="37vLTw" id="175hM6u4PS4" role="3clFbw">
+            <ref role="3cqZAo" node="175hM6u4PpM" resolve="additionalLogic" />
           </node>
         </node>
       </node>
